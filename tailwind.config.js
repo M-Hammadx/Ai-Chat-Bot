@@ -1,5 +1,8 @@
-module.exports = {
-    content: ["./src/**/*.{js,jsx,ts,tsx}"],
+// tailwind.config.js
+import { defineConfig } from 'tailwindcss'
+
+export default defineConfig({
+    content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: { extend: {} },
     plugins: [],
-}
+})
