@@ -1,11 +1,9 @@
-import './App.css'
-import Home from './pages/Home.jsx'
 function App() {
   return (
-    <>
-      <Home />
-    </>
-  )
+    <div className="p-4">
+      <h1 className="text-2xl font-bold">AI Chatbot Testing System</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
