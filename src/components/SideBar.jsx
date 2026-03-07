@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const SideBar = () => {
-    const [isCollapsed, setIsCollapsed] = useState(false);
+const SideBar = ({ isCollapsed, toggleCollapse }) => {
 
     // Navigation links array for easy rendering and maintenance
     const navLinks = [
@@ -75,7 +74,7 @@ const SideBar = () => {
 
                 {/* Collapse Toggle Button - visible only when expanded or hovered on desktop */}
                 <button
-                    onClick={() => setIsCollapsed(!isCollapsed)}
+                    onClick={toggleCollapse}
                     className={`
                         p-1.5 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500
                         ${isCollapsed ? 'hidden' : 'block'}
@@ -92,7 +91,7 @@ const SideBar = () => {
             {isCollapsed && (
                 <div className="py-4 flex justify-center">
                     <button
-                        onClick={() => setIsCollapsed(!isCollapsed)}
+                        onClick={toggleCollapse}
                         className="p-2 rounded-lg bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
