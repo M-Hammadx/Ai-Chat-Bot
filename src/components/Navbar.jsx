@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <header className="w-full sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <header className="w-full sticky top-0 z-30 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
             {/* Top Announcement Bar */}
             <div className="bg-slate-900 text-slate-300 py-2 px-4 sm:px-6 lg:px-8 text-xs sm:text-sm flex justify-center sm:justify-between items-center transition-all">
                 <p className="hidden sm:block font-medium">Get in touch with us for any inquiries or support.</p>
